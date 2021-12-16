@@ -1,33 +1,35 @@
 const container = document.getElementById('middleContainer');
 const canvas = document.getElementById('box');
-const button = document.getElementById('buttons');
+const eraserButton = document.getElementById('eraser');
+const clearButton = document.getElementById('clear');
+const scalar = document.getElementById('scalar');
 let color = 'rgb(0,0,0)';
 let eraser = false;
-
-function draw (color) {
-    canvas.style.backgroundColor = color;
-}
-
-function canvasControl () {
-    if (color) {
-        draw(color)
-    }
-    else if (eraser == true) {
-        canvas.style.backgroundColor = 'white';
-    }
-}
 
 function createCanvas() {
     const canvas = {};
     for (let div = 0; div < 10000; div++) {
         canvas[div] = document.createElement('div');
         canvas[div].className ='canvas';
-        canvas[div].idName =`canvas{div}`;
         container.appendChild(canvas[div]);
-        console.log(`canvas{div}`);
+        canvas[div].addEventListener('click', () =>
+        {
+            if (color){
+            canvas[div].style.backgroundColor = color;
+        }
+            else if (eraser) {
+                canvas[div].style.backgroundColor = 'white';
+        }
+        });
     }
 };
-console.log(button);
+
+function pixelScalar() {
+
+}
+
 createCanvas();
 canvas.addEventListener('click', () => canvasControl());
-button.addEventListener('click', () => {black = false; eraser = true;});
+eraserButton.addEventListener('click', () => {color = false; eraser = true});
+clearButton.addEventListener('click', () => container.style.backgroundColor = 'white');
+scalar.addEventListener('input', () => {container.div.width = scalar.value; container.div.height = scalar.value});
