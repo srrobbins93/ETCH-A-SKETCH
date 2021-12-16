@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETCH-A-SKETCH</title>
+    <link rel="stylesheet" href="style.css"></style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="title">Pixel Editor</div>
+    <div id="main">
+        <div id="leftContainer">
+            <div id="options">
+                <div>Pixel Size</div>
+                <input type="range" id="scalor" min="5" max="100" placeholder="25"></input>
+            <div id="box"></div>
+            <div id="colorOptions">
+                <div id="rangeText">
+                    <textarea id="r" maxlength="3" minlength="1">50</textarea>
+                    <textarea id="g" maxlength="3" minlength="1">50</textarea>
+                    <textarea ud="b" maxlength="3" minlength="1">50</textarea>
+                </div>
+                <input id="rRange" type="range" min="0" max="255" value="50"></input>
+                <button class="button">Color Picker</button>
+            </div>
+            <div id="buttons">
+                <button class="button">Eraser</button>
+                <button class="button">Clear</button>
+            </div>
+        </div>
+        </div>
+        <div id="middleContainer">
+        </div>
+    </div>
+
+</body>
+</html>

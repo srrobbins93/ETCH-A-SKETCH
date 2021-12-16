@@ -1,0 +1,111 @@
+body, #main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    flex-direction: column;
+}
+
+#title {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+#main {
+    margin: 50px;
+    padding: 25px;
+    gap: 20px;
+    border: .5px groove;
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px 20px rgba(0, 0, 0, 0.137)
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#scalor {
+    margin-top: 10px;
+}
+
+#leftContainer, #colorOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#leftContainer {
+    padding: 10px;
+    border: .5px groove;
+    height: 480px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.137)
+}
+
+#box {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.137)
+}
+
+textarea {
+    resize: none;
+    width: 30px;
+    height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.137)
+}
+
+#buttons {
+    direction: flex
+}
+
+.button {
+    color: #33a1fd;
+    background-color:white;
+    border: 1px groove #33a1fd;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    color: white;
+    background-color:#33a1fd;
+}
+
+.canvas {
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    object-fit: contain;
+}
+
+#middleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    max-height: 500px;
+    max-width: 500px;
+    border: 1px groove;
+    overflow: hidden;
+}
+
+.canvas:hover {
+    background-color: black;
+}
