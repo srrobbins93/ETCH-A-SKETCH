@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="title">Pixel Editor</div>
+    <div id="title">Pix-a-Sketch</div>
     <div id="main">
         <div id="leftContainer">
             <div id="options">
@@ -20,10 +20,15 @@
                 <div id="rangeText">
                     <textarea id="r" maxlength="3" minlength="1">50</textarea>
                     <textarea id="g" maxlength="3" minlength="1">50</textarea>
-                    <textarea ud="b" maxlength="3" minlength="1">50</textarea>
+                    <textarea id="b" maxlength="3" minlength="1">50</textarea>
                 </div>
-                <input id="rRange" type="range" min="0" max="255" value="50"></input>
-                <button class="button">Color Picker</button>
+                <div class ="rangeText">R</div>
+                <input id="rRange" type="range" min="0" max="255" value="0"></input>
+                <div class ="rangeText">G</div>
+                <input id="gRange" type="range" min="0" max="255" value="0"></input>
+                <div class ="rangeText">B</div>
+                <input id="bRange" type="range" min="0" max="255" value="0"></input>
+                <button class="button" id="colorPicker">Color Picker</button>
             </div>
             <div id="buttons">
                 <button class="button" id="eraser">Eraser</button>
@@ -31,9 +36,15 @@
             </div>
         </div>
         </div>
-        <div id="middleContainer">
+        <div id="canvasContainer">
         </div>
     </div>
+    <footer>
+        <div>Created by:</div>
+        <img src='Octocat.png'>
+        <a href="https://github.com/srrobbins93"><button id="footerButton">srrobbins93</button></a>
+
+    </footer>
 
 </body>
 </html>
