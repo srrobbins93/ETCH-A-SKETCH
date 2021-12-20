@@ -109,6 +109,21 @@ bRange.addEventListener('input', () => {
     colorUpdate();
 });
 
+r.addEventListener('change', () => {
+    document.getElementById('rRange').value = r.value;
+    colorUpdate();
+})
+
+g.addEventListener('change', () => {
+    document.getElementById('gRange').value = g.value;
+    colorUpdate();
+})
+
+b.addEventListener('change', () => {
+    document.getElementById('bRange').value = b.value;
+    colorUpdate();
+})
+
 //On click, a function is executed whereby the scalar input range will influence the size of all child elements of canvasContainer.
 scalar.addEventListener('input', () =>
 {
