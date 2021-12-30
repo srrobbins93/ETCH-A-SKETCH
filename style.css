@@ -106,21 +106,23 @@ textarea {
     border: 1px groove;
     overflow: hidden;
 }
-footer div {
-    font-size: 16;
-    color: #33a1fd;
+
+a:link, a:visited {
+font-size: 16;
+color: #33a1fd;
+text-decoration: none;
+}
+
+a:hover {
+font-size: 16;
+color: #33a1fd;
+text-decoration: underline;
 }
 
 footer img {
     height: auto;
     width: 20px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 28px;
     margin-right: 10px;
-}
-
-#footerButton {
-    color: #33a1fd;
-    background-color:white;
-    border: 1px groove #33a1fd;
-    border-radius: 20px;
 }
